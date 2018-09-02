@@ -14,7 +14,6 @@ public class Stack {
         this.stack = new ArrayList<>(size);
         this.maxSize = size;
     }
-
     public void push(Integer element){
         try {
             if (stack.size() < maxSize) {
@@ -25,6 +24,5 @@ public class Stack {
         }catch (StackOverflowException e){
             e.printStackTrace();
         }
-
     }
 }
