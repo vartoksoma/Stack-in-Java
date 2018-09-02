@@ -46,7 +46,7 @@ public class Stack {
         }
     }
 
-    public Integer peek(){
+    public Integer peek() {
         return stack.get(0);
     }
 }
