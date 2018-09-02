@@ -25,4 +25,28 @@ public class Stack {
             e.printStackTrace();
         }
     }
+
+    public Integer getMaxStackSize(){
+        return maxSize;
+    }
+
+    public Integer getFreeSpace(){
+        return maxSize - stack.size();
+    }
+
+    public void pop() {
+        try {
+            if (stack.size() == 0) {
+                throw new StackUnderflowException("stack is empty");
+            } else {
+                stack.remove(0);
+            }
+        }catch (StackUnderflowException e){
+            e.printStackTrace();
+        }
+    }
+
+    public Integer peek(){
+        return stack.get(0);
+    }
 }
